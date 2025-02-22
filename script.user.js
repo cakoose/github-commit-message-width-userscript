@@ -2,7 +2,7 @@
 // @name        GitHub commit message width
 // @match       *://github.com/*/*/pull/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      Kannan Goundan
 // @description Modify GitHub commit message editor to use fixed-width font and show where the 72-column limit is.
 // ==/UserScript==
@@ -35,7 +35,7 @@
         // label with the contents "Commit message" (only works for English) and
         // find the associated input element.
         for (const label of node.getElementsByTagName("label")) {
-            if (label.textContent === 'Commit message') {
+            if (label.textContent === 'Extended description') {
                 const textareaId = label.getAttribute('for');
                 if (textareaId !== null) {
                     const textarea = document.getElementById(textareaId);
