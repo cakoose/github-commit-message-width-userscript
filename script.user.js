@@ -5,6 +5,7 @@
 // @version     1.1
 // @author      Kannan Goundan
 // @description Modify GitHub commit message editor to use fixed-width font and show where the 72-column limit is.
+// @downloadURL https://raw.githubusercontent.com/cakoose/github-commit-message-width-userscript/main/script.user.js
 // ==/UserScript==
 
 (function() {
